@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website - Login </title>
+        <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+    
+</head>
+<body>
+
+
+<div class="notesbody">   
+   <form class="form-notes">
+        <fieldset id="notes-fields">
+            <div class="notes-tiles">        
+               <br><p>Title</p><br>
+               <input type="text" id="title-text"  placeholder="Enter your title"><br><br>
+               <p>Description</p><br>
+               <textarea type="text" id="description-text" placeholder="Enter your description"></textarea><br><br> 
+               <button id="notes-btn">+</button> 
+            </div>
+        </fieldset>
+   </form> 
+   <section>
+    <div class="container">
+        <h2>Your Notes</h2>
+        <hr>
+        <div id="notes">
+    
+                <div class="note">
+                    <p class="note-counter">Note ${index + 1}</p>
+                    <h3 class="note-title"> $element.title </h3>
+                    <p class="note-text"> $element.text</p>
+                    <button class="note-btn">Delete Note</button>
+                    <button class="notr-btn edit-btn">Edit Note</button>
+                </div>
+            
+        </div>
+    </div>
+</section>
+    
+  </div>
+<script src="script_1.js"> </script>
+</body>
+</html>
